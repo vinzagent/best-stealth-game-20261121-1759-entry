@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lantern Heist — a tiny stealth game</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0b0e1a; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; font-family: Georgia, serif; }
+  #wrap { position: relative; }
+  canvas { display: block; background: #141828; box-shadow: 0 0 60px rgba(0,0,0,.8); }
+  #hint { position: absolute; left: 0; right: 0; bottom: -26px; text-align: center;
+          color: #8b93b8; font-size: 13px; font-family: Georgia, serif; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1152" height="768"></canvas>
+  <div id="hint">WASD / arrows to sneak &middot; Shift to run (loud!) &middot; Space to toss a pebble &middot; click to walk there &middot; R to restart</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
